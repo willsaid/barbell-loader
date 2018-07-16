@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		853982D220FAD6BF00EB6CF3 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853982D120FAD6BF00EB6CF3 /* Coefficients.swift */; };
 		853982D420FAE7F700EB6CF3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853982D320FAE7F700EB6CF3 /* Alert.swift */; };
-		8578F67320FBCC97005957EA /* WeightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8578F67220FBCC97005957EA /* WeightHistory.swift */; };
 		85FA127620F7C2CA00C0BD2E /* Barbell_Loader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85FA127420F7C2CA00C0BD2E /* Barbell_Loader.xcdatamodeld */; };
 		85FA127820F7C2CB00C0BD2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FA127720F7C2CB00C0BD2E /* Assets.xcassets */; };
 		85FA127B20F7C2CB00C0BD2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FA127920F7C2CB00C0BD2E /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		853982D120FAD6BF00EB6CF3 /* Coefficients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coefficients.swift; sourceTree = "<group>"; };
 		853982D320FAE7F700EB6CF3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		8578F67220FBCC97005957EA /* WeightHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHistory.swift; sourceTree = "<group>"; };
 		85FA126A20F7C2CA00C0BD2E /* Barbell Loader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barbell Loader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FA127520F7C2CA00C0BD2E /* Barbell_Loader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Barbell_Loader.xcdatamodel; sourceTree = "<group>"; };
 		85FA127720F7C2CB00C0BD2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				85FA128620F7C59600C0BD2E /* QuestionAnswerer.swift */,
 				85FA12A820F7D47800C0BD2E /* Log.swift */,
 				85FA12AA20F7D4E800C0BD2E /* Weight.swift */,
-				8578F67220FBCC97005957EA /* WeightHistory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 				85FA129820F7C59700C0BD2E /* ViewController.swift in Sources */,
 				85FA129C20F7C59700C0BD2E /* RepPercentageTableViewCell.swift in Sources */,
 				85FA129220F7C59700C0BD2E /* HomeViewController.swift in Sources */,
-				8578F67320FBCC97005957EA /* WeightHistory.swift in Sources */,
 				85FA12A220F7CBFB00C0BD2E /* MyViewController.swift in Sources */,
 				85FA12A020F7CBE000C0BD2E /* Extensions.swift in Sources */,
 				853982D420FAE7F700EB6CF3 /* Alert.swift in Sources */,

@@ -71,7 +71,7 @@ class ViewController: MyViewController, UIPickerViewDelegate, UIScrollViewDelega
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: 300, height: 875)
+        scrollView.contentSize = CGSize(width: 244, height: 986)
         imageScrollView.contentSize = CGSize(width: 7000, height: 5000)
         
         needMorePlatesLabel.text = needPlatesLabelOnStart
@@ -457,11 +457,10 @@ class ViewController: MyViewController, UIPickerViewDelegate, UIScrollViewDelega
             UIimageArray.removeLast()
             removeAllWeights()
             showWeights()
-            var lastWeight = WeightHistory.sharedInstance.pop()
-            if lastWeight == Weight.currentWeight {
-                //first time hitting delete
-                lastWeight = WeightHistory.sharedInstance.pop()
-            }
+
+            let lastWeight = Weight(images: UIimageArray, type: Weight.currentWeight.type)
+            
+            
             if lastWeight.type == .kg {
                 let pounds = Weight(amount: lastWeight.pounds, type: .lb)
                 responseLabel?.text = "\(lastWeight.toString) kg  (\(pounds.toString) lb)"
@@ -473,6 +472,8 @@ class ViewController: MyViewController, UIPickerViewDelegate, UIScrollViewDelega
             Weight.currentWeight = lastWeight
         }
     }
+    
+    
     
     func viewForZooming(in imageScrollView: UIScrollView) -> UIView? {
         return stackView
@@ -657,6 +658,7 @@ class ViewController: MyViewController, UIPickerViewDelegate, UIScrollViewDelega
         
         if isPlateButton {
             question = setWeightFromPlateButton(question: String(q), kilo: kilo)
+            questionField.text = ""
         } else {
             question = String(q)
         }
@@ -688,9 +690,7 @@ class ViewController: MyViewController, UIPickerViewDelegate, UIScrollViewDelega
         let weight = Weight(amount: question, type: newKilo ? .kg : .lb)!
         
         Weight.currentWeight = weight
-        
-        WeightHistory.sharedInstance.add(weight: weight)
-        
+                
         imageScrollView.zoomScale = 1
         
         RequestReview.request()

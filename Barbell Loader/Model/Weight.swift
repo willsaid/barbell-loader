@@ -6,7 +6,7 @@
 //  Copyright © 2018 Will Said. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 enum WeightType {
@@ -21,6 +21,10 @@ struct Weight {
     
     static func + (_ left: Weight, _ right: Weight) -> Weight {
         return Weight(amount: left.pounds + right.pounds, type: .lb)
+    }
+    
+    static func += (_ left: inout Weight, _ right: Weight) {
+        left = left + right
     }
     
     static func == (_ left: Weight, _ right: Weight) -> Bool {
@@ -54,6 +58,17 @@ struct Weight {
         } else {
             return nil
         }
+    }
+    
+    init(images: [UIImage], type: WeightType) {
+        //passed in the plate images, need to construct a weight from it
+        let weight = Weight.convert(images: images)
+        if type == .kg {
+            self.amount = weight.kilograms
+        } else {
+            self.amount = weight.pounds
+        }
+        self.type = type
     }
     
     
@@ -128,6 +143,100 @@ struct Weight {
     
     
     
+    
+    //init helper: converts image array into weight
+    static func convert(images: [UIImage]) -> Weight {
+        var weight = Weight(amount: barweightstartingat45, type: .lb)
+        
+        for weightImage in images {
+            if weightImage == #imageLiteral(resourceName: "bigRed") {
+                weight += Weight(amount: 50, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "bigBlue") {
+                weight += Weight(amount: 40, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "bigYellow") {
+                weight += Weight(amount: 30, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "bigGreen") {
+                weight += Weight(amount: 20, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "white") {
+                weight += Weight(amount: 10, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "littleRed") {
+                weight += Weight(amount: 5, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "littleBlue") {
+                weight += Weight(amount: 4, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "littleYellow") {
+                weight += Weight(amount: 3, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "littleGreen") {
+                weight += Weight(amount: 2, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "littleWhite") {
+                weight += Weight(amount: 1, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "powerquarterkilo") {
+                weight += Weight(amount: 0.5, type: .kg)
+            } else if weightImage == #imageLiteral(resourceName: "weighted2.5kgcollar") {
+                weight += Weight(amount: 5, type: .kg) //collars
+            } else if weightImage == #imageLiteral(resourceName: "fortyfive") {
+                 weight += Weight(amount: 90, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "thirtyfiveplate") {
+                weight += Weight(amount: 70, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "twentyfive") {
+                weight += Weight(amount: 50, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "ten") {
+                weight += Weight(amount: 20, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "five") {
+                weight += Weight(amount: 10, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "twohalf") {
+                weight += Weight(amount: 5, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "onepound") {
+                weight += Weight(amount: 2, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "threequarterplate") {
+                weight += Weight(amount: 1.5, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "halfpoundplate") {
+                weight += Weight(amount: 1, type: .lb)
+            } else if weightImage == #imageLiteral(resourceName: "quarterpoundplate") {
+                weight += Weight(amount: 0.5, type: .lb)
+            }
+        }
+        
+        
+        return weight
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

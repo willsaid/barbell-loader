@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.712665"
+            timestampString = "553473749.746938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "493"
-            endingLineNumber = "493"
+            startingLineNumber = "494"
+            endingLineNumber = "494"
             landmarkName = "evaluateInput(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/SinclairWilksViewController.swift"
-            timestampString = "553455212.713903"
+            timestampString = "553471885.910993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "330"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/SinclairWilksViewController.swift"
-            timestampString = "553455212.714326"
+            timestampString = "553471885.911139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "329"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/SinclairWilksViewController.swift"
-            timestampString = "553455212.714789"
+            timestampString = "553471885.911275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "328"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/SinclairWilksViewController.swift"
-            timestampString = "553455212.715188"
+            timestampString = "553471885.911405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
@@ -138,39 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.715693"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "460"
-            endingLineNumber = "460"
-            landmarkName = "delete()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.716992"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "463"
-            endingLineNumber = "463"
-            landmarkName = "delete()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.7190861"
+            timestampString = "553473749.747861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "456"
@@ -186,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.7202229"
+            timestampString = "553473749.748338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -202,12 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.721182"
+            timestampString = "553473749.74876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "462"
-            endingLineNumber = "462"
-            landmarkName = "delete()"
+            startingLineNumber = "483"
+            endingLineNumber = "483"
+            landmarkName = "evaluateInput(type:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.72219"
+            timestampString = "553473749.749197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "482"
@@ -234,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barbell Loader/View Controllers/ViewController.swift"
-            timestampString = "553455212.7231359"
+            timestampString = "553473749.749591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "481"
-            endingLineNumber = "481"
-            landmarkName = "evaluateInput(type:)"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "undoTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
