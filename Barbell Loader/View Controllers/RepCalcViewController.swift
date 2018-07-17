@@ -79,6 +79,15 @@ class RepCalcViewController: MyViewController, UITableViewDelegate, UITableViewD
         return repMaxes.count
     }
     
+    
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        currentIndex = indexPath.row
+        
+        Weight.currentWeight = Weight(amount: weights[currentIndex], type: Weight.currentWeight.type)
+        
+        ViewController.present(from: self)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "PercentTableViewCell"
@@ -113,7 +122,9 @@ class RepCalcViewController: MyViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Rep Calculator"
-        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.reloadData()
     }
     
     
