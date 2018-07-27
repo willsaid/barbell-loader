@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		853982D220FAD6BF00EB6CF3 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853982D120FAD6BF00EB6CF3 /* Coefficients.swift */; };
 		853982D420FAE7F700EB6CF3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853982D320FAE7F700EB6CF3 /* Alert.swift */; };
+		8579FA4D210B907900CDB642 /* RepMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579FA4C210B907900CDB642 /* RepMax.swift */; };
+		8579FA4F210B987400CDB642 /* Sinclair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579FA4E210B987400CDB642 /* Sinclair.swift */; };
+		8579FA51210B98C500CDB642 /* Wilks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579FA50210B98C500CDB642 /* Wilks.swift */; };
+		8579FA53210B9A9800CDB642 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579FA52210B9A9800CDB642 /* Score.swift */; };
 		85FA127620F7C2CA00C0BD2E /* Barbell_Loader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85FA127420F7C2CA00C0BD2E /* Barbell_Loader.xcdatamodeld */; };
 		85FA127820F7C2CB00C0BD2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FA127720F7C2CB00C0BD2E /* Assets.xcassets */; };
 		85FA127B20F7C2CB00C0BD2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FA127920F7C2CB00C0BD2E /* LaunchScreen.storyboard */; };
@@ -35,6 +39,10 @@
 /* Begin PBXFileReference section */
 		853982D120FAD6BF00EB6CF3 /* Coefficients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coefficients.swift; sourceTree = "<group>"; };
 		853982D320FAE7F700EB6CF3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		8579FA4C210B907900CDB642 /* RepMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepMax.swift; sourceTree = "<group>"; };
+		8579FA4E210B987400CDB642 /* Sinclair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sinclair.swift; sourceTree = "<group>"; };
+		8579FA50210B98C500CDB642 /* Wilks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilks.swift; sourceTree = "<group>"; };
+		8579FA52210B9A9800CDB642 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		85FA126A20F7C2CA00C0BD2E /* Barbell Loader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barbell Loader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FA127520F7C2CA00C0BD2E /* Barbell_Loader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Barbell_Loader.xcdatamodel; sourceTree = "<group>"; };
 		85FA127720F7C2CB00C0BD2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +134,10 @@
 		85FA12A420F7CC7D00C0BD2E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8579FA4C210B907900CDB642 /* RepMax.swift */,
+				8579FA4E210B987400CDB642 /* Sinclair.swift */,
+				8579FA50210B98C500CDB642 /* Wilks.swift */,
+				8579FA52210B9A9800CDB642 /* Score.swift */,
 				853982D320FAE7F700EB6CF3 /* Alert.swift */,
 				853982D120FAD6BF00EB6CF3 /* Coefficients.swift */,
 				85FA12A620F7D21600C0BD2E /* RequestReview.swift */,
@@ -226,12 +238,16 @@
 				85FA129420F7C59700C0BD2E /* AppInfoViewController.swift in Sources */,
 				853982D220FAD6BF00EB6CF3 /* Coefficients.swift in Sources */,
 				85FA12A920F7D47800C0BD2E /* Log.swift in Sources */,
+				8579FA53210B9A9800CDB642 /* Score.swift in Sources */,
+				8579FA4D210B907900CDB642 /* RepMax.swift in Sources */,
 				85FA129A20F7C59700C0BD2E /* PercentagesViewController.swift in Sources */,
 				85FA12A720F7D21600C0BD2E /* RequestReview.swift in Sources */,
+				8579FA51210B98C500CDB642 /* Wilks.swift in Sources */,
 				85FA129520F7C59700C0BD2E /* SecondViewController.swift in Sources */,
 				85FA129820F7C59700C0BD2E /* ViewController.swift in Sources */,
 				85FA129C20F7C59700C0BD2E /* RepPercentageTableViewCell.swift in Sources */,
 				85FA129220F7C59700C0BD2E /* HomeViewController.swift in Sources */,
+				8579FA4F210B987400CDB642 /* Sinclair.swift in Sources */,
 				85FA12A220F7CBFB00C0BD2E /* MyViewController.swift in Sources */,
 				85FA12A020F7CBE000C0BD2E /* Extensions.swift in Sources */,
 				853982D420FAE7F700EB6CF3 /* Alert.swift in Sources */,

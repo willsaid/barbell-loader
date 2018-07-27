@@ -19,33 +19,20 @@ enum WeightType {
 struct Weight {
     
     
-    static func + (_ left: Weight, _ right: Weight) -> Weight {
-        return Weight(amount: left.pounds + right.pounds, type: .lb)
-    }
-    
-    static func += (_ left: inout Weight, _ right: Weight) {
-        left = left + right
-    }
-    
-    static func == (_ left: Weight, _ right: Weight) -> Bool {
-        return left.amount == right.amount && left.type == right.type
-    }
-    
     ///1 kg = 0.45359237 lb
     private let CONVERSION = 0.45359237
-    
     
     ///updating this one will set @lastWeight
     static var currentWeight = Weight(amount: barweightstartingat45, type: .lb)
     
     
-    
-    
+    // MARK: - INSTANCE VARIABLES
     var amount: Double
     var type: WeightType
     
     
     
+    // MARK: - INITIALIZERS
     init(amount: Double, type: WeightType) {
         self.amount = amount
         self.type = type
@@ -75,8 +62,9 @@ struct Weight {
     
     
     
-    //these are exact, not rounded
+    // MARK: - COMPUTED PROPERTIES
     
+    //these are exact, not rounded
     var pounds: Double {
         if type == .kg {
             return (amount / CONVERSION)
@@ -110,7 +98,10 @@ struct Weight {
     }
     
     
-    func truncation() -> String {
+    
+    // MARK: - PRIVATE HELPERS
+    
+    private func truncation() -> String {
         if (amount * 10).truncatingRemainder(dividingBy: 10.0) == 5 {
             //0.5
             
@@ -131,7 +122,7 @@ struct Weight {
     }
     
     ///check Double is within bounds of Int
-    func check(value: Double) -> Int {
+    private func check(value: Double) -> Int {
         if value > Double(Int.max) || value < 0 {
             return 0
         }
@@ -142,9 +133,9 @@ struct Weight {
     
     
     
+    // MARK: - INIT HELPERS
     
-    
-    //init helper: converts image array into weight
+    //converts image array into weight
     static func convert(images: [UIImage]) -> Weight {
         var weight = Weight(amount: barweightstartingat45, type: .lb)
         
@@ -204,7 +195,19 @@ struct Weight {
     
     
     
+    // MARK: - OPERATORS
     
+    static func + (_ left: Weight, _ right: Weight) -> Weight {
+        return Weight(amount: left.pounds + right.pounds, type: .lb)
+    }
+    
+    static func += (_ left: inout Weight, _ right: Weight) {
+        left = left + right
+    }
+    
+    static func == (_ left: Weight, _ right: Weight) -> Bool {
+        return left.amount == right.amount && left.type == right.type
+    }
     
     
     
