@@ -3,7 +3,7 @@
 Barbell Loader and Calculator is the ultimate iOS app for weightlifters and powerlifters.
 It loads the bar while calculating conversions, rep maxes, sinclair and wilks coefficients, loadable percentages, and more, along with ample customization.
 
-<a href="https://itunes.apple.com/US/app/id1322247393?mt=8">Download on the App Store</a>
+<a href="https://itunes.apple.com/US/app/id1322247393?mt=8">View on the App Store</a>
 
 ## Screenshots
 
